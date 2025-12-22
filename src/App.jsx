@@ -1,10 +1,12 @@
-import { useState } from "react";
 import "./App.css";
+import Accordian from "./components/accordian";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>React Practice Projects 25</>;
+  return (
+    <div>
+      <Accordian />
+    </div>
+  );
 }
 
 export default App;
