@@ -14,10 +14,16 @@ const Accordian = () => {
 
   const expandMultipeAnswers = (id) => {
     let copy = [...showMultipleAnswer];
-    !showMultipleAnswer?.includes(id) ? copy?.push(id) : copy.splice(id - 1, 1);
+
+    const isIndexAvailable = showMultipleAnswer.indexOf(id);
+    console.log("isIndexAvailable", isIndexAvailable);
+    if (isIndexAvailable === -1) {
+      copy.push(id);
+    } else {
+      copy.splice(isIndexAvailable, 1);
+    }
     setShowMultipleAnswer(copy);
   };
-  console.log("showMultipleAnswer", showMultipleAnswer);
   return (
     <div className="wrapper">
       <button onClick={() => setMultiSlection(!multiSelection)}>
@@ -25,7 +31,7 @@ const Accordian = () => {
       </button>
       <div className="accordian">
         {data && data?.length > 0 ? (
-          data?.map((item, index) => (
+          data?.map((item) => (
             <div className="item">
               <div
                 onClick={() =>
