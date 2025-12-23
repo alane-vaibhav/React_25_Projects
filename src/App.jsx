@@ -1,9 +1,20 @@
+import React from "react";
 import "./App.css";
 import Accordian from "./components/accordian";
 import RandomColor from "./components/randomColor";
+import StarRating from "./components/starRating";
 import ToDoApp from "./components/todolist";
 
+export const PracticeContext = React.createContext();
+
 function App() {
+  let color = {
+    color1: "pink",
+    color2: "red",
+    color3: "green",
+    color4: "blue",
+    color5: "orange",
+  };
   return (
     <div
       style={{
@@ -14,7 +25,10 @@ function App() {
     >
       <Accordian />
       <ToDoApp />
-      <RandomColor />
+      <PracticeContext.Provider value={color}>
+        <RandomColor />
+      </PracticeContext.Provider>
+      <StarRating />
     </div>
   );
 }

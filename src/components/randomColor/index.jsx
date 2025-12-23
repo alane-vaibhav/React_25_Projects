@@ -1,8 +1,13 @@
 import React, { useState } from "react";
+import { PracticeContext } from "../../App";
 
 const RandomColor = () => {
+  const colorContext = React.useContext(PracticeContext) || {};
+
   const [typeOfColor, setTypeOfColor] = useState("hex");
-  const [color, setColor] = useState("#000000");
+  const [color, setColor] = useState(colorContext?.color3) || "";
+
+  console.log("ColorContext", colorContext?.color4);
 
   const utility = (length) => {
     return Math.floor(Math.random() * length);
