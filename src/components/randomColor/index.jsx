@@ -66,9 +66,11 @@ const RandomColor = () => {
         Generate Random Color
       </button>
 
-      <div style={{ color: "#fffff" }}>
-        <h1>{typeOfColor === "hex" ? "HEX Color" : "RGB Color"}</h1>
-        <h1>{color}</h1>
+      <div>
+        <h1 style={{ color: "#fff" }}>
+          {typeOfColor === "hex" ? "HEX Color" : "RGB Color"}
+        </h1>
+        <h1 style={{ color: "#fff" }}>{color}</h1>
       </div>
     </div>
   );
