@@ -1,5 +1,6 @@
 import "./App.css";
 import Accordian from "./components/accordian";
+import RandomColor from "./components/randomColor";
 import ToDoApp from "./components/todolist";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     >
       <Accordian />
       <ToDoApp />
+      <RandomColor />
     </div>
   );
 }
