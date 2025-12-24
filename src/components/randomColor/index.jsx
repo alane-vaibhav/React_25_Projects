@@ -7,8 +7,6 @@ const RandomColor = () => {
   const [typeOfColor, setTypeOfColor] = useState("hex");
   const [color, setColor] = useState(colorContext?.color3) || "";
 
-  console.log("ColorContext", colorContext?.color4);
-
   const utility = (length) => {
     return Math.floor(Math.random() * length);
   };

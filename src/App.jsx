@@ -28,7 +28,7 @@ function App() {
       <PracticeContext.Provider value={color}>
         <RandomColor />
       </PracticeContext.Provider>
-      <StarRating />
+      <StarRating noOfStars={10} />
     </div>
   );
 }
