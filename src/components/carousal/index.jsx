@@ -42,7 +42,6 @@ const Carousal = ({ url, page, limit }) => {
     setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
   };
 
-  console.log(currentSlide);
   return (
     <div className="container">
       <BsArrowLeftCircleFill
