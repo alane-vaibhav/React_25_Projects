@@ -4,6 +4,7 @@ import Accordian from "./components/accordian";
 import RandomColor from "./components/randomColor";
 import StarRating from "./components/starRating";
 import ToDoApp from "./components/todolist";
+import Carousal from "./components/carousal";
 
 export const PracticeContext = React.createContext();
 
@@ -16,20 +17,23 @@ function App() {
     color5: "orange",
   };
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        rowGap: "5px",
-      }}
-    >
-      <Accordian />
-      <ToDoApp />
-      <PracticeContext.Provider value={color}>
-        <RandomColor />
-      </PracticeContext.Provider>
-      <StarRating noOfStars={10} />
-    </div>
+    <>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          rowGap: "5px",
+        }}
+      >
+        <Accordian />
+        <ToDoApp />
+        <PracticeContext.Provider value={color}>
+          <RandomColor />
+        </PracticeContext.Provider>
+        <StarRating noOfStars={10} />
+      </div>
+      <Carousal url={"https://picsum.photos/v2/list"} limit={10} />
+    </>
   );
 }
 
