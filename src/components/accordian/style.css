@@ -1,6 +1,6 @@
 .wrapper {
   display: 100px;
-  height: 60vh;
+  height: auto;
   justify-content: center;
   align-items: center;
   gap: 20px;

@@ -15,7 +15,7 @@ const ToDoApp = () => {
     setList(newList);
   };
   return (
-    <div>
+    <div style={{ height: "auto", marginBottom: "20px" }}>
       <h2>To do App</h2>
 
       <div>
