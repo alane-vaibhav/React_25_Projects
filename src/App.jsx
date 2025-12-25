@@ -6,6 +6,8 @@ import StarRating from "./components/starRating";
 import ToDoApp from "./components/todolist";
 import Carousal from "./components/carousal";
 import LoadMoreButton from "./components/loadMore";
+import NestedNavigation from "./components/nested-navigation";
+import sideMenu from "./components/nested-navigation/data";
 
 export const PracticeContext = React.createContext();
 
@@ -35,6 +37,7 @@ function App() {
       </div>
       <Carousal url={"https://picsum.photos/v2/list"} limit={10} />
       <LoadMoreButton />
+      <NestedNavigation menu={sideMenu} />
     </>
   );
 }
