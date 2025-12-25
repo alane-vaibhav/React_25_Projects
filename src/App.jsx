@@ -5,6 +5,7 @@ import RandomColor from "./components/randomColor";
 import StarRating from "./components/starRating";
 import ToDoApp from "./components/todolist";
 import Carousal from "./components/carousal";
+import LoadMoreButton from "./components/loadMore";
 
 export const PracticeContext = React.createContext();
 
@@ -33,6 +34,7 @@ function App() {
         <StarRating noOfStars={10} />
       </div>
       <Carousal url={"https://picsum.photos/v2/list"} limit={10} />
+      <LoadMoreButton />
     </>
   );
 }
