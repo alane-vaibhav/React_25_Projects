@@ -1,5 +1,6 @@
 import React from "react";
 import Menuitem from "./menuitem";
+import "./style.css";
 
 const Menulist = ({ list }) => {
   return (

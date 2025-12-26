@@ -16,7 +16,6 @@ const Accordian = () => {
     let copy = [...showMultipleAnswer];
 
     const isIndexAvailable = showMultipleAnswer.indexOf(id);
-    console.log("isIndexAvailable", isIndexAvailable);
     if (isIndexAvailable === -1) {
       copy.push(id);
     } else {

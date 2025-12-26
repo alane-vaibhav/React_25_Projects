@@ -1,0 +1,18 @@
+.tree-menu-conatiner {
+  min-height: 100vh;
+  width: 350px;
+  background: rgb(0, 71, 110);
+}
+
+.item-menu-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.list-menu-conatiner {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+}

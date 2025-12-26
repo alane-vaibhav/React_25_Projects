@@ -21,7 +21,6 @@ const LoadMoreButton = () => {
         setProducts([...products, ...result.products]);
         setLoading(false);
       }
-      console.log(products);
     } catch (e) {
       console.log(e);
       setLoading(false);

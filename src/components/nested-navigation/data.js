@@ -7,7 +7,13 @@ const sideMenu = [
       {
         label: "Details",
         to: "details",
-        children: [{ label: "Location", to: "location" }],
+        children: [
+          {
+            label: "Location",
+            to: "location",
+            children: [{ label: "city", to: "city" }],
+          },
+        ],
       },
     ],
   },
