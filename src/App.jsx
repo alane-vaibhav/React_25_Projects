@@ -8,6 +8,7 @@ import Carousal from "./components/carousal";
 import LoadMoreButton from "./components/loadMore";
 import NestedNavigation from "./components/nested-navigation";
 import sideMenu from "./components/nested-navigation/data";
+import QRCodeGenerator from "./components/qrCodegenrator";
 
 export const PracticeContext = React.createContext();
 
@@ -21,6 +22,7 @@ function App() {
   };
   return (
     <>
+      <QRCodeGenerator />
       <div
         style={{
           display: "flex",
