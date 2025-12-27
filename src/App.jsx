@@ -11,6 +11,9 @@ import sideMenu from "./components/nested-navigation/data";
 import QRCodeGenerator from "./components/qrCodegenrator";
 import SwitchTheme from "./components/themeSwitch";
 import CustomScrollIndicator from "./components/custom-scroll-indicator";
+import A from "./components/contextApiDetails/A";
+import B from "./components/contextApiDetails/B";
+import { MyContextProvider } from "./MyContext";
 
 export const PracticeContext = React.createContext();
 
@@ -24,6 +27,11 @@ function App() {
   };
   return (
     <>
+      <MyContextProvider>
+        <A />
+        <B />
+      </MyContextProvider>
+
       <CustomScrollIndicator />
       <SwitchTheme />
       <QRCodeGenerator />
